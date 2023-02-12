@@ -19,15 +19,15 @@
             <div class="grid grid-cols-3 gap-5 w-9/12 mx-auto">
                 <div class="text-white bg-amber-500 p-8 rounded-lg">
                     <h2 class="text-4xl">Deposit</h2>
-                    <h3 class="text-5xl">$00</h3>
+                    <h3  class="text-5xl">$<span id="deposit-amount">00</span></h3>
                 </div>
                 <div class="text-white bg-violet-700 p-8 rounded-lg">
                     <h2 class="text-4xl">Withdraw</h2>
-                    <h3 class="text-5xl">$00</h3>
+                    <h3 class="text-5xl">$<span id="withdraw-amount">00</span></h3>
                 </div>
                 <div class="text-white bg-lime-700 p-8 rounded-lg">
                     <h2 class="text-4xl">Balance</h2>
-                    <h3 class="text-5xl">$1240</h3>
+                    <h3 class="text-5xl">$<span id="balance-amount">1240</span></h3>
                 </div>
             </div>
         </section>
@@ -37,7 +37,7 @@
                     <h2 class="text-4xl font-medium mb-6">Please Deposit</h2>
                     <input class="w-9/12 block mb-5 px-4 py-2 rounded text-black" type="text" name="" id="deposit-field"
                         placeholder="$ Amount you want to deposit"> 
-                    <button id="btn-deposite"
+                    <button id="btn-deposit"
                         class="bg-amber-600 hover:bg-red-500 text-white px-8 py-3 font-medium rounded">Deposit</button>
                 </div>
                 <div class="text-white bg-fuchsia-500 p-8 rounded-lg">
@@ -52,6 +52,8 @@
         </section>
 
     </main>
+    <script src="js/balance.js"></script>
+    <script src="js/withdraw.js"></script>
 
 </body>
 
